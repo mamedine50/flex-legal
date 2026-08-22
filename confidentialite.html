@@ -30,6 +30,7 @@ modification du code.</p>
   <tr><td>Position GPS</td><td>Voir la section 2, qui en décrit précisément l’usage.</td></tr>
   <tr><td>Historique des courses et des offres</td><td>Vous les retrouvez dans « Mes courses ». Elles servent aussi au calcul des gains d’un conducteur.</td></tr>
   <tr><td>Évaluations et commentaires</td><td>Publiés de façon anonyme. Voir la section 6.</td></tr>
+  <tr><td>Messages échangés pendant une course</td><td>La messagerie interne de Flex. Voir la section 3.</td></tr>
   <tr><td>Lieux enregistrés</td><td>Vos raccourcis personnels. Voir la section 5.</td></tr>
   <tr><td>Pièces du dossier conducteur</td><td>Uniquement si vous demandez à conduire. Voir la section 4.</td></tr>
   <tr><td>Photo de vous tenant votre permis</td><td>Uniquement si vous demandez à conduire. Vérification anti-fraude. Voir la section 4.</td></tr>
@@ -53,14 +54,26 @@ produit.</p>
   l’application n’est pas à l’écran, plus rien n’est transmis.</li>
 </ul>
 
-<h2>3. Numéro de téléphone</h2>
-<p>Votre numéro n’est montré qu’à la contrepartie d’une course <strong>acceptée</strong>,
-et pour la durée de cette course : c’est ce qui permet de se retrouver. Il n’est
-jamais visible avant, ni par un conducteur qui a seulement vu passer votre
-demande, ni par un autre utilisateur.</p>
-<p>Flex n’a pas encore de messagerie interne : le bouton « Écrire » ouvre le SMS de
-votre téléphone. C’est la seule exposition volontaire d’un numéro dans le
-produit, et une messagerie interne est prévue pour la supprimer.</p>
+<h2>3. Numéro de téléphone et messagerie</h2>
+<p>Votre numéro <strong>ne s’affiche jamais</strong> dans Flex — ni avant une course,
+ni pendant, ni après. Il sert à vous connecter, et c’est tout.</p>
+<p>Pour vous coordonner avec votre conducteur ou votre passager, Flex a une
+<strong>messagerie interne</strong>. La conversation s’ouvre quand l’offre est
+acceptée et se <strong>ferme à la fin de la course</strong> : vous pouvez encore
+relire l’historique — c’est ce qui permet d’étayer un signalement — mais plus
+personne ne peut y écrire. Seules les deux personnes de cette course y ont
+accès ; cette règle est vérifiée par des tests automatisés à chaque modification
+du code, y compris la tentative d’un tiers de lire ou d’écrire dans un fil qui
+ne le concerne pas.</p>
+<p>Les messages ne sont ni modifiables ni supprimables, par personne. Un message
+qu’on peut retirer est une preuve qui disparaît.</p>
+<p><strong>La seule exception : l’appel.</strong> Le bouton « Appeler » compose
+directement le numéro de votre contrepartie, qui apparaît alors dans le
+journal d’appels de votre téléphone — comme pour n’importe quel appel. C’est le
+dernier endroit du produit où un numéro circule. Un relais qui masquerait les
+deux numéros derrière un numéro de service est prévu ; en attendant, si vous ne
+souhaitez pas que votre numéro soit vu, utilisez la messagerie plutôt que
+l’appel.</p>
 
 <h2>4. Pièces du dossier conducteur</h2>
 <p>Si vous demandez à conduire, Flex collecte cinq pièces : votre carte nationale
@@ -133,7 +146,7 @@ ainsi que la suppression de votre compte, en écrivant à l’adresse ci-dessous
 <div class="encart">
   <h2>Ce qui est déjà vrai dans l’application</h2>
   <p>Avant acceptation, un conducteur ne voit ni votre nom complet, ni votre
-  numéro, ni votre position exacte — seulement une zone arrondie et un nom de
+  numéro — il n’est montré à personne, jamais — ni votre position exacte, seulement une zone arrondie et un nom de
   commune. Le nom de vos lieux enregistrés et vos précisions ne quittent jamais
   votre téléphone. Ces règles sont vérifiées par des tests automatisés à chaque
   modification.</p>
