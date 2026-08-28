@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- La lentille de Fresnel. Ce qui fait un phare, ce n'est pas la tour :
+       c'est la lentille, qui prend une petite lampe et fait porter sa lumière
+       à quarante kilomètres. Les anneaux s'ouvrent à trois heures et à neuf
+       heures — la lumière sort par là, et ce vide empêche la forme de se lire
+       comme une cible. -->
+  <g fill="none" stroke="#F1F6FA" stroke-width="11" stroke-linecap="round">
+    <path d="M33.7 50.4 A28 28 0 0 1 86.3 50.4"/>
+    <path d="M86.3 69.6 A28 28 0 0 1 33.7 69.6"/>
+    <path d="M18.6 45 A44 44 0 0 1 101.4 45"/>
+    <path d="M101.4 75 A44 44 0 0 1 18.6 75"/>
+  </g>
+  <circle cx="60" cy="60" r="12" fill="#F5A524"/>
+</svg>

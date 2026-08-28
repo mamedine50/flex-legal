@@ -3,19 +3,279 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Flex — pages légales</title>
-<link rel="stylesheet" href="style.css">
+<title>Phare Studio — logiciels faits au Sénégal</title>
+<meta name="description" content="Phare Studio conçoit des logiciels au Sénégal, pour le Sénégal. Flex, le transport avec négociation directe du prix. Teranga Foot et Pharmastock, bientôt.">
+<link rel="icon" href="marque.svg" type="image/svg+xml">
+<meta name="theme-color" content="#080f18">
+
+<meta property="og:title" content="Phare Studio">
+<meta property="og:description" content="Des logiciels faits au Sénégal, pour le Sénégal.">
+<meta property="og:url" content="https://pharestudio.sn/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_SN">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="studio.css">
 </head>
 <body>
-<main>
-<h1>Flex</h1>
-<p class="intro">Transport avec négociation directe du prix, au Sénégal.</p>
-<ul>
-  <li><a href="confidentialite.html">Politique de confidentialité</a></li>
-  <li><a href="conditions.html">Conditions d’utilisation</a></li>
-  <li><a href="support.html">Support</a></li>
-</ul>
-<footer>Flex — Dakar, Sénégal</footer>
+
+<header class="barre" id="barre">
+  <div class="enveloppe">
+    <a class="logo" href="#haut" aria-label="Phare Studio, accueil">
+      <img src="marque.svg" alt="" width="30" height="30">
+      <span class="nom">Phare <span>Studio</span></span>
+    </a>
+    <nav class="liens" aria-label="Sections">
+      <a href="#produits">Produits</a>
+      <a href="#studio" class="optionnel">Le studio</a>
+      <a class="cta" href="#contact">Nous écrire</a>
+    </nav>
+  </div>
+</header>
+
+<main id="haut">
+
+  <!-- ═══════════════════════════════════════════════════ héros ═══════ -->
+  <section class="heros">
+    <div class="faisceau" aria-hidden="true"></div>
+    <div class="quadrillage" aria-hidden="true"></div>
+
+    <div class="enveloppe">
+      <div>
+        <span class="jeton"><span class="pastille"></span> Flex est en test privé à Dakar</span>
+
+        <h1>Le prix se <em>discute</em>. Comme dans la rue.</h1>
+
+        <p class="chapo">
+          Phare Studio conçoit des logiciels au Sénégal, pour le Sénégal. Notre premier produit
+          rend sûr et traçable ce qui se fait déjà au bord de la route : on annonce un prix, on
+          répond, on s’entend.
+        </p>
+
+        <div class="actions">
+          <a class="cta" href="#produits">Voir les produits</a>
+          <a class="fantome" href="#studio">Comment on travaille</a>
+        </div>
+      </div>
+
+      <!-- La négociation JOUÉE, pas décrite : un prix proposé, deux réponses,
+           une acceptée. Reconstitution en HTML — trois kilo-octets, net sur
+           tous les écrans, et aucun visage réel. -->
+      <div class="telephone" aria-hidden="true">
+        <div class="encoche"></div>
+        <div class="ecran">
+          <div class="ecran-titre">Votre demande</div>
+
+          <div class="trajet">
+            <div class="point"><span class="rond depart"></span> Colobane</div>
+            <div class="point"><span class="rond arrivee"></span> Mermoz</div>
+          </div>
+
+          <div class="prix-bloc">
+            <div class="prix-etiquette">Votre prix</div>
+            <div class="prix">2 000 FCFA</div>
+          </div>
+
+          <div class="offres">
+            <div class="offre a">
+              <span class="tete" style="background:#f5a524">M</span>
+              <span>
+                <span class="nom">Modou</span>
+                <span class="dit contre" style="display:block">demande 2 500</span>
+              </span>
+              <span class="somme">2 500</span>
+            </div>
+
+            <div class="offre b retenue">
+              <span class="tete" style="background:#34d399">A</span>
+              <span>
+                <span class="nom">Awa</span>
+                <span class="dit accepte" style="display:block">accepte votre prix</span>
+              </span>
+              <span class="somme">2 000</span>
+            </div>
+          </div>
+
+          <div class="sceau">Course confirmée avec Awa</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═════════════════════════════════════════ bande de chiffres ═════ -->
+  <div class="bande">
+    <div class="enveloppe">
+      <div class="chiffre-bloc">
+        <div class="valeur">2 s</div>
+        <div class="quoi">Premier écran utile, sur un Android d’entrée de gamme en 3G</div>
+      </div>
+      <div class="chiffre-bloc">
+        <div class="valeur">30 Mo</div>
+        <div class="quoi">Poids maximum de l’application. Une limite, pas un objectif</div>
+      </div>
+      <div class="chiffre-bloc">
+        <div class="valeur">100 F</div>
+        <div class="quoi">Le pas d’un prix. Assez fin pour s’entendre, assez large pour décider</div>
+      </div>
+      <div class="chiffre-bloc">
+        <div class="valeur">0</div>
+        <div class="quoi">Numéro visible avant acceptation. Écrit dans la base, pas dans un réglage</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════ produits ═══════ -->
+  <section id="produits">
+    <div class="enveloppe">
+      <p class="oeil monte">Produits</p>
+      <h2 class="monte">Trois produits, un même terrain.</h2>
+      <p class="intro monte">
+        Chacun répond à un problème qu’on a vu de près, pas à une catégorie de marché.
+      </p>
+
+      <div class="bento">
+        <article class="produit vivant grand monte">
+          <h3>Flex</h3>
+          <p>
+            Le transport avec <strong>négociation directe du prix</strong>. Le passager propose ce
+            qu’il veut payer, les conducteurs répondent — accepter, ou demander autre chose. Personne
+            ne subit un tarif décidé ailleurs, et personne ne découvre le prix à l’arrivée.
+          </p>
+          <p>
+            La position exacte n’est servie qu’après acceptation. Avant, une zone approximative. Ce
+            n’est pas une option : c’est la base de données qui refuse.
+          </p>
+          <span class="etat en-cours">En test privé à Dakar</span>
+        </article>
+
+        <div class="duo-bas">
+          <article class="produit monte">
+            <h3>Teranga Foot</h3>
+            <p>Réservation de terrains de football.</p>
+            <span class="etat">Bientôt</span>
+          </article>
+
+          <article class="produit monte">
+            <h3>Pharmastock</h3>
+            <p>Gestion de stock pour les officines.</p>
+            <span class="etat">Bientôt</span>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════ le studio ═══════ -->
+  <section id="studio">
+    <div class="enveloppe">
+      <p class="oeil monte">Le studio</p>
+      <h2 class="monte">On construit pour les conditions réelles.</h2>
+      <p class="intro monte">
+        Pas pour un téléphone de démonstration posé sur un bureau avec la fibre. Trois règles qu’on
+        s’impose, et qu’on tient au chiffre près.
+      </p>
+
+      <div class="principes">
+        <div class="principe monte">
+          <div class="num">01</div>
+          <div>
+            <h3>Le premier écran en moins de deux secondes</h3>
+            <p>
+              Sur un Android d’entrée de gamme, en 3G. Pas d’écran de démarrage animé pour masquer
+              l’attente : on enlève ce qui pèse plutôt que de le déguiser. La carte se charge après
+              l’accueil, jamais avant.
+            </p>
+          </div>
+        </div>
+
+        <div class="principe monte">
+          <div class="num">02</div>
+          <div>
+            <h3>Le français d’abord, l’anglais ensuite</h3>
+            <p>
+              Aucun texte n’est écrit en dur dans un écran — tout passe par un catalogue, vérifié à
+              chaque construction. Le wolof est préparé, et il attendra d’être traduit par quelqu’un
+              dont c’est la langue.
+            </p>
+          </div>
+        </div>
+
+        <div class="principe monte">
+          <div class="num">03</div>
+          <div>
+            <h3>Les données restent à qui elles appartiennent</h3>
+            <p>
+              Un conducteur ne voit ni le nom complet ni le numéro de son passager avant d’avoir été
+              accepté. Une conversation de course disparaît avec la course. Ce ne sont pas des
+              réglages : c’est écrit dans la base, et chaque règle porte son test.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════ contact ═══════ -->
+  <section id="contact">
+    <div class="enveloppe">
+      <div class="contact monte">
+        <img class="lentille" src="marque.svg" alt="" width="52" height="52">
+        <h2 style="margin-top:18px">Une question, une idée,<br>un partenariat.</h2>
+        <a class="courriel" href="mailto:pharestudiosn@gmail.com">pharestudiosn@gmail.com</a>
+        <p style="margin:16px 0 0;color:var(--muted);font-size:15px">
+          Nous répondons sous deux jours ouvrés.
+        </p>
+      </div>
+    </div>
+  </section>
+
 </main>
+
+<footer>
+  <div class="enveloppe">
+    <span>Phare Studio — Dakar, Sénégal</span>
+    <nav aria-label="Pages légales">
+      <a href="confidentialite.html">Confidentialité</a>
+      <a href="conditions.html">Conditions</a>
+      <a href="support.html">Support</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+  // Deux effets, et rien d'autre. Pas de bibliothèque : quelques lignes valent
+  // mieux que quarante kilo-octets pour poser une classe.
+  (function () {
+    var barre = document.getElementById('barre');
+    var surDefilement = function () {
+      barre.classList.toggle('posee', window.scrollY > 12);
+    };
+    surDefilement();
+    window.addEventListener('scroll', surDefilement, { passive: true });
+
+    // Les blocs montent en entrant dans l'écran. `IntersectionObserver` plutôt
+    // qu'un calcul au défilement : le navigateur le fait hors du fil principal.
+    // Absent — ou mouvement réduit — tout reste simplement visible.
+    var doux = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (doux || !('IntersectionObserver' in window)) {
+      document.querySelectorAll('.monte').forEach(function (n) { n.classList.add('vu'); });
+      return;
+    }
+    var guetteur = new IntersectionObserver(function (entrees) {
+      entrees.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        e.target.classList.add('vu');
+        guetteur.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px' });
+    document.querySelectorAll('.monte').forEach(function (n, i) {
+      n.style.transitionDelay = (i % 4) * 70 + 'ms';
+      guetteur.observe(n);
+    });
+  })();
+</script>
+
 </body>
 </html>
